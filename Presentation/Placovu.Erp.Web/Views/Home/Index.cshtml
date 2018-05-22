@@ -1,0 +1,20 @@
+﻿
+@using (Ajax.BeginForm("Create", "Home", new AjaxOptions { HttpMethod = "POST", OnFailure = "handleOnFailure", OnSuccess= "handleOnSuccess" }))
+{
+
+    @Html.Partial("_Home")
+
+}
+
+
+
+@section Scripts{
+    <script>
+        function handleOnFailure() {
+            alert('handleOnFailure');
+        }
+        function handleOnSuccess() {
+            alert('handleOnSuccess');
+        }
+    </script>
+}

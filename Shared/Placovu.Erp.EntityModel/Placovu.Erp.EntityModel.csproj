@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76933A19-D78F-49BE-8D3A-408936023135}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Placovu.Erp.EntityModel</RootNamespace>
+    <AssemblyName>Placovu.Erp.EntityModel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BSEAutoNumberSetup.cs" />
+    <Compile Include="BSEBankAccount.cs" />
+    <Compile Include="BSEBankInfo.cs" />
+    <Compile Include="BSEBillType.cs" />
+    <Compile Include="BSEBranchInfo.cs" />
+    <Compile Include="BSEBusinessParty.cs" />
+    <Compile Include="BSEBusinessPartyBankInfo.cs" />
+    <Compile Include="BSEBusinessUnit.cs" />
+    <Compile Include="BSEBusinessWorkingDay.cs" />
+    <Compile Include="BSECompany.cs" />
+    <Compile Include="BSECountry.cs" />
+    <Compile Include="BSECurrency.cs" />
+    <Compile Include="BSECustomer.cs" />
+    <Compile Include="BSEDepartment.cs" />
+    <Compile Include="BSEDistrictName.cs" />
+    <Compile Include="BSELocation.cs" />
+    <Compile Include="BSEMeasurementUnit.cs" />
+    <Compile Include="BSEOperatingUnit.cs" />
+    <Compile Include="BSEPaymentMode.cs" />
+    <Compile Include="BSEPaymentStatu.cs" />
+    <Compile Include="BSEPaymentTerm.cs" />
+    <Compile Include="BSEPaymentType.cs" />
+    <Compile Include="BSEProject.cs" />
+    <Compile Include="BSEReportParam.cs" />
+    <Compile Include="BSESupplier.cs" />
+    <Compile Include="FACAccountConfiguration.cs" />
+    <Compile Include="FACAccountingPeriod.cs" />
+    <Compile Include="FACAccountingPeriodTest.cs" />
+    <Compile Include="FACAccountingReportType.cs" />
+    <Compile Include="FACAccountMasterType.cs" />
+    <Compile Include="FACAccountSubType.cs" />
+    <Compile Include="FACAccountType.cs" />
+    <Compile Include="FACApplyPrepayment.cs" />
+    <Compile Include="FACBilling.cs" />
+    <Compile Include="FACBillingDetail.cs" />
+    <Compile Include="FACChartOfAccount.cs" />
+    <Compile Include="FACChartOfAccountsStat.cs" />
+    <Compile Include="FACCreditMemo.cs" />
+    <Compile Include="FACCreditMemoStatu.cs" />
+    <Compile Include="FACDebitMemo.cs" />
+    <Compile Include="FACDebitMemoStatu.cs" />
+    <Compile Include="FACFinSecurityRule.cs" />
+    <Compile Include="FACFiscalYear.cs" />
+    <Compile Include="FACFiscalYearTest.cs" />
+    <Compile Include="FACGLedger.cs" />
+    <Compile Include="FACGLSecurityRule.cs" />
+    <Compile Include="FACGLSecurityRuleAndCOA.cs" />
+    <Compile Include="FACInitialBalance.cs" />
+    <Compile Include="FACInterUnitTranType.cs" />
+    <Compile Include="FACJournal.cs" />
+    <Compile Include="FACJournalDetail.cs" />
+    <Compile Include="FACJournalType.cs" />
+    <Compile Include="FACPayment.cs" />
+    <Compile Include="FACPaymentDetail.cs" />
+    <Compile Include="FACPrepayment.cs" />
+    <Compile Include="FACPrepaymentInvoice.cs" />
+    <Compile Include="FACPrepaymentInvoiceStatu.cs" />
+    <Compile Include="FACSourceProcess.cs" />
+    <Compile Include="FACTemporaryFund.cs" />
+    <Compile Include="FACUserAndGLSecurityRule.cs" />
+    <Compile Include="FACVoucher.cs" />
+    <Compile Include="INVAdjustment.cs" />
+    <Compile Include="INVDelivery.cs" />
+    <Compile Include="INVDeliveryDetail.cs" />
+    <Compile Include="INVDeliveryLCDetail.cs" />
+    <Compile Include="INVInventoryRule.cs" />
+    <Compile Include="INVInventoryType.cs" />
+    <Compile Include="INVItemBalance.cs" />
+    <Compile Include="INVItemGroup.cs" />
+    <Compile Include="INVItemInfo.cs" />
+    <Compile Include="INVItemInitialBalance.cs" />
+    <Compile Include="INVItemMovement.cs" />
+    <Compile Include="INVItemMovementDetail.cs" />
+    <Compile Include="INVItemMovementType.cs" />
+    <Compile Include="INVItemPriceHistory.cs" />
+    <Compile Include="INVItemType.cs" />
+    <Compile Include="INVPrimaryItemBalance.cs" />
+    <Compile Include="INVPutaway.cs" />
+    <Compile Include="INVPutawayDetail.cs" />
+    <Compile Include="INVSOLCDOItemDetailMap.cs" />
+    <Compile Include="INVStorageLocation.cs" />
+    <Compile Include="INVUserAndIssuer.cs" />
+    <Compile Include="INVUserAndIssuerDetail.cs" />
+    <Compile Include="PlacovuEntityContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PRSPurchaseHistory.cs" />
+    <Compile Include="PRSPurchaseInvoice.cs" />
+    <Compile Include="PRSPurchaseInvoiceDetail.cs" />
+    <Compile Include="PRSPurchaseInvoiceType.cs" />
+    <Compile Include="PRSPurchaseOrder.cs" />
+    <Compile Include="PRSPurchaseOrderDetail.cs" />
+    <Compile Include="PRSPurchaseOrderReceiptStatu.cs" />
+    <Compile Include="PRSPurchaseOrderStatu.cs" />
+    <Compile Include="PRSPurchasePayment.cs" />
+    <Compile Include="PRSPurchaseReceipt.cs" />
+    <Compile Include="PRSPurchaseReceiptDetail.cs" />
+    <Compile Include="PRSPurchaseRecieptStatu.cs" />
+    <Compile Include="PRSPurchaseRequisition.cs" />
+    <Compile Include="PRSPurchaseRequisitionDetail.cs" />
+    <Compile Include="PRSPurchaseRequisitionStatu.cs" />
+    <Compile Include="PRSPurchaseReturn.cs" />
+    <Compile Include="PRSPurchaseReturnDetail.cs" />
+    <Compile Include="PRSPurchaseReturnStatu.cs" />
+    <Compile Include="PRSReceipt_Inv_Status.cs" />
+    <Compile Include="PRSUserAndReceiver.cs" />
+    <Compile Include="PRSUserAndReceiverDetail.cs" />
+    <Compile Include="SECApplication.cs" />
+    <Compile Include="SECComponent.cs" />
+    <Compile Include="SECModule.cs" />
+    <Compile Include="SECPermissionList.cs" />
+    <Compile Include="SECPermissionListDetail.cs" />
+    <Compile Include="SECRole.cs" />
+    <Compile Include="SECRoleAndPermission.cs" />
+    <Compile Include="SECUser.cs" />
+    <Compile Include="SECUserAndBusinessUnit.cs" />
+    <Compile Include="SECUserAndRole.cs" />
+    <Compile Include="SLSAdditionalExpConfig.cs" />
+    <Compile Include="SLSAddlExpDetail.cs" />
+    <Compile Include="SLSCashSalesConfiguration.cs" />
+    <Compile Include="SLSDeliveryStatu.cs" />
+    <Compile Include="SLSInvoiceStatu.cs" />
+    <Compile Include="SLSLC.cs" />
+    <Compile Include="SLSLCDocsStatu.cs" />
+    <Compile Include="SLSLCInvoiceStatu.cs" />
+    <Compile Include="SLSLC_Details.cs" />
+    <Compile Include="SLSLC_DocsWorkflow.cs" />
+    <Compile Include="SLSMfgInstruction.cs" />
+    <Compile Include="SLSMfgInstructionDetail.cs" />
+    <Compile Include="SLSMfgInstructionStatu.cs" />
+    <Compile Include="SLSSalesInvoice.cs" />
+    <Compile Include="SLSSalesInvoiceDetail.cs" />
+    <Compile Include="SLSSalesOrder.cs" />
+    <Compile Include="SLSSalesOrderAmendment.cs" />
+    <Compile Include="SLSSalesOrderAmendmentDetail.cs" />
+    <Compile Include="SLSSalesOrderDetail.cs" />
+    <Compile Include="SLSSalesOrderDetailForDO.cs" />
+    <Compile Include="SLSSalesOrderDetailSpec.cs" />
+    <Compile Include="SLSSalesOrderSpecConfig.cs" />
+    <Compile Include="SLSSalesOrderStatu.cs" />
+    <Compile Include="SLSSalesOrderTerm.cs" />
+    <Compile Include="SLSSalesOrderTermsConfig.cs" />
+    <Compile Include="SLSSalesPayment.cs" />
+    <Compile Include="SLSSalesReturn.cs" />
+    <Compile Include="SLSSalesReturnDetail.cs" />
+    <Compile Include="SLSSOChange_hdr.cs" />
+    <Compile Include="SLSSOChange_line.cs" />
+    <Compile Include="SLSSOPaymentMode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
